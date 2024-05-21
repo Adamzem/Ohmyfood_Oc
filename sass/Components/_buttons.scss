@@ -1,0 +1,175 @@
+/*Bouton général EXPLORER et COMMANDER*/
+.button__round {
+    border-radius: 25px;
+    border: none;
+    height: 50px;
+    font-family: $main-font;
+    font-size: 15px;
+    font-weight: 500;
+    box-shadow: 0px 4px 10px 0px rgba(0,0,0,.25);
+    cursor: pointer;
+    transition: 400ms ease-in-out;
+    &:hover {
+        opacity: 0.85;
+        box-shadow: 0px 4px 10px 0px rgba(0,0,0,.7);
+    }
+    &--default-color {
+        background: $button-main-color;
+        color:#FFFFFF;
+    }
+    &--explore {
+        width: 220px;
+    }
+    &--command {
+        width: 185px;
+        margin: 40px 0px;
+    }
+    &--white-color {
+        color:#9356DC;
+    }
+}
+
+/*Bouton Homepage FONCTIONNEMENT*/
+.button__functioning {
+    display: flex;
+    padding-left: 20px;
+    height: 72px;
+    margin-bottom: 20px;
+    background-color: #F6F6F6;
+    border-radius: 20px;
+    width: 100%;
+    justify-content: center;
+    box-shadow: 0px 4px 15px 0px rgba(0,0,0,.15);
+    margin-left: 20px;
+    &--icon {
+        line-height: 72px;
+        position: relative;
+        right: 10px;
+        width: 10%;
+    }
+    &--number {
+        position: relative;
+        background-color: #9356DC;
+        color: white;
+        border-radius: 50%;
+        left: -35px;
+        height: 24px;
+        top: 24px;
+        padding:0px 8px;
+        text-align: center;
+        font-size: 14px;
+        & p {
+            margin: 0px;
+            margin-top: 3px;
+        }
+    }
+    &--text {
+        position: relative;
+        width: 90%;
+        & h4 {
+            margin: 0px;
+            line-height: 72px;
+            font-family: $main-font;
+            font-weight: 500;
+        }
+    }
+    .icon-colored {
+        color:#9356DC;
+    }
+}
+
+/*Boutons CARTES MENUS */
+.button-card {
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    box-shadow: 0px 4px 15px 0px rgba(0,0,0,.10);
+    width: 92%;
+    margin-left: 15px;
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    opacity: 0;
+    &:hover > .menu-choice {
+        transform: translate(0px);
+        width: 80px;
+    }
+    &:hover > .menu-choice > i {
+        transform: rotate(-360deg);
+    }
+    &--text {
+        padding: 10px 12px;
+        overflow: hidden;
+        width: 95%;
+        & h4 {
+            font-size: 18px;
+            margin-top: 0px;
+            margin-bottom: 0px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        & p {
+            font-size: 15px;
+            font-weight: 300;
+            margin-top: 5px;
+            margin-bottom: 0px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+    }
+    &--price {
+        display: flex;
+        align-items: end;
+        padding-right: 12px;
+        padding-bottom: 12px;
+        margin-bottom: 0px;
+        width: 5%;
+        justify-content: end;
+    }
+}
+
+.button-position {
+    display:flex;
+    justify-content: center ;
+}
+
+/*bouton coeur*/
+.button-heart {
+    position: relative;
+    display: flex;
+    justify-content: end;
+    &--homepage {
+        bottom: 45px;
+        right: 30px;
+    }
+    &--menu {
+        bottom: 55px;
+        right: 25px;
+    }
+    & button {
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+    }
+}
+
+/*bouton flèche HEADER */
+.button-arrow {
+    position: absolute;
+    left: 15px;
+    top: 12px;
+    font-size: 20px;
+    border: none;
+    background-color: white;
+    & i{
+        padding: 8px 10px;
+        transition: 200ms ease-in-out;
+    }
+    & :hover i{
+        padding: 8px 10px;
+        border-radius: 50%;
+        box-shadow: 0px 4px 10px 0px rgba(0,0,0,.25);
+    }
+}
